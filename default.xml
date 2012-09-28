@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/" />
   <default revision="refs/tags/android-4.1.1_r6"
            remote="aosp"
-           sync-j="4" />
+           sync-j="32" />
   <remote  name="gh"
            fetch="https://github.com/" />
   <remote  name="JDD"
