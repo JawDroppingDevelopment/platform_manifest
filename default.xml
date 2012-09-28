@@ -2,10 +2,12 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/" />
   <default revision="refs/tags/android-4.1.1_r6"
            remote="aosp"
            sync-j="4" />
+  <remote  name="gh"
+           fetch="https://github.com/" />
 
   <project path="build" name="platform/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -303,5 +305,7 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
   <project path="system/vold" name="platform/system/vold" />
+  
+  <project path="platform_manifest" name="platform_manifest" remote="gh" revision="android-4.1.1_r6" />
 
 </manifest>
